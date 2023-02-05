@@ -5,6 +5,10 @@
   font-family: "system-ui";
 }
 
+body {
+  padding-top: 255px;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,14 +17,161 @@ button {
   border: none;
 }
 
-// navbar stylings
+// colors
 
-.nav_wrapper {
-  width: 100%;
-  display: flex;
+.color_secondary {
+  color: $secondary;
+}
+.color_primary {
+  color: $primary;
+}
+.bg_secondary {
+  background-color: $secondary;
+}
+.bg_primary {
+  background-color: $primary;
 }
 
+// navbar stylings
+
+nav {
+  height: 226px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 101;
+  background-color: $white;
+  transition: $transition_light;
+  top: 0;
+  left: 0;
+  .nav_wrapper {
+    width: 100%;
+    display: flex;
+
+    .nav_cols {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.logo_wrapper {
+        width: 150px;
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: contain;
+          transition: $transition_light;
+        }
+      }
+      &.links_styles {
+        flex-grow: 1;
+
+        a {
+          color: $text-color;
+          font-size: 18px;
+          padding: 0 15px;
+          font-weight: $medium;
+        }
+      }
+    }
+  }
+
+  &.animated_nav {
+    height: 120px;
+
+    .nav_cols {
+      &.links_styles {
+        // margin-top: 0;
+      }
+
+      &.logo_wrapper {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+// dropdown _____________________________________________________________________________________________
+
+.dropdown_wrapper {
+  position: relative;
+
+  a {
+    color: $text_color;
+    font-size: 18px;
+    padding: 0 15px;
+    font-weight: $medium;
+    cursor: pointer;
+  }
+
+  .dropdown_container {
+    position: absolute;
+    z-index: 100;
+    background-color: $light_gray;
+    display: none;
+    left: 15px;
+    top: 25px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .dropdown_items {
+      height: 60px;
+      width: 150px;
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: $primary;
+
+      &:hover {
+        background: $gradient_primary;
+        color: $white;
+      }
+    }
+  }
+
+  &.show_dropdown {
+    .dropdown_container {
+      display: block;
+      animation: showDropdown both 0.6s;
+    }
+  }
+  &.exit_dropdown {
+    .dropdown_container {
+      display: block;
+      animation: hideDropdown both 0.6s;
+    }
+  }
+}
+
+@keyframes showDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes hideDropdown {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
 // footer stylings
+
 
 .footer_wrapper {
   width: 100%;
@@ -172,6 +323,87 @@ button {
         }
       }
 
+    }
+  }
+}
+
+
+// buttons stylings _____________________________________________________________________________________________
+
+.styled_button {
+  padding: 18px 25px;
+  border-radius: 30px;
+  transition: $transition_medium;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.primary {
+    background-color: $primary;
+    color: #fff;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+  &.secondary {
+    background-color: $secondary;
+    color: #fff;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &.f_sm {
+    font-size: 12px;
+  }
+  &.f_md {
+    font-size: 14px;
+  }
+  &.f_lg {
+    font-size: 16px;
+  }
+
+  &.icon_styles {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
+
+      &.icon_sm {
+        font-size: 18px;
+      }
+      &.icon_md {
+        font-size: 22px;
+      }
+      &.icon_lg {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &.animated {
+    position: relative;
+    padding: 12px 50px;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 45px;
+      border-radius: 50px;
+      background-color: $secondary;
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
     }
   }
 }
