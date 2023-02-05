@@ -6,15 +6,42 @@
 }
 
 body {
-  padding-top: 255px;
+  padding-top: 220px;
 }
 
 a {
   text-decoration: none;
 }
+
 button {
   background-color: transparent;
   border: none;
+}
+
+// FONT FACES
+@font-face {
+  font-family: Syne-bold;
+  src: url(../fonts/Syne-Bold.ttf);
+}
+
+@font-face {
+  font-family: Syne-medium;
+  src: url(../fonts/Syne-Medium.ttf);
+}
+
+@font-face {
+  font-family: Syne-extra-bold;
+  src: url(../fonts/Syne-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Syne-regular;
+  src: url(../fonts/Syne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Syne-semi-bold;
+  src: url(../fonts/Syne-SemiBold.ttf);
 }
 
 
@@ -23,13 +50,16 @@ button {
 .color_secondary {
   color: $secondary;
 }
-.color_primary{
+
+.color_primary {
   color: $primary;
 }
+
 .bg_secondary {
   background-color: $secondary;
 }
-.bg_primary{
+
+.bg_primary {
   background-color: $primary;
 }
 
@@ -46,6 +76,7 @@ nav {
   transition: $transition_light;
   top: 0;
   left: 0;
+
   .nav_wrapper {
     width: 100%;
     display: flex;
@@ -57,6 +88,7 @@ nav {
 
       &.logo_wrapper {
         width: 150px;
+
         img {
           width: 150px;
           height: 150px;
@@ -64,6 +96,7 @@ nav {
           transition: $transition_light;
         }
       }
+
       &.links_styles {
         flex-grow: 1;
 
@@ -141,6 +174,7 @@ nav {
       animation: showDropdown both 0.6s;
     }
   }
+
   &.exit_dropdown {
     .dropdown_container {
       display: block;
@@ -151,24 +185,26 @@ nav {
 
 // footer stylings
 
-.footer_wrapper {
-}
+.footer_wrapper {}
 
 @keyframes showDropdown {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
 @keyframes hideDropdown {
   from {
     transform: translateY(0px);
     opacity: 1;
   }
+
   to {
     opacity: 0;
     transform: translateY(-20px);
@@ -194,6 +230,7 @@ nav {
       background-color: $secondary;
     }
   }
+
   &.secondary {
     background-color: $secondary;
     color: #fff;
@@ -206,9 +243,11 @@ nav {
   &.f_sm {
     font-size: 12px;
   }
+
   &.f_md {
     font-size: 14px;
   }
+
   &.f_lg {
     font-size: 16px;
   }
@@ -223,9 +262,11 @@ nav {
       &.icon_sm {
         font-size: 18px;
       }
+
       &.icon_md {
         font-size: 22px;
       }
+
       &.icon_lg {
         font-size: 26px;
       }
@@ -236,6 +277,7 @@ nav {
     position: relative;
     padding: 12px 50px;
     z-index: 1;
+
     &::after {
       content: "";
       position: absolute;
@@ -247,6 +289,7 @@ nav {
       background-color: $secondary;
       z-index: -1;
     }
+
     &:hover {
       &::after {
         width: 100%;
@@ -254,3 +297,65 @@ nav {
     }
   }
 }
+
+// banner _____________________________________________________________________________________________
+.banner-wrapper {
+  background-size: cover !important;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+ .banner-heading{
+    h2 {
+        // font-size: $f_sm;
+        font-family: 'Syne-semi-bold';
+        text-transform: capitalize;
+        color: $white ;
+      }
+ }
+
+    .underline {
+      width: 15%;
+      background-color: $white;
+      height: 0.1rem;
+    }
+
+    .banner-btn{
+
+      .btn-primary{
+        background-color: #fff;
+        border-color: #fff;
+        font-weight: bold;
+        color:$text_color ;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        span{
+          letter-spacing: 0.1rem;
+          font-family: 'Syne-bold';
+        }
+        &:hover{
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
+
