@@ -18,6 +18,22 @@ button {
   border: none;
 }
 
+.color_secondary {
+  color: #2a9afe;
+}
+
+.color_primary {
+  color: #0054a1;
+}
+
+.bg_secondary {
+  background-color: #2a9afe;
+}
+
+.bg_primary {
+  background-color: #0054a1;
+}
+
 nav {
   height: 226px;
   width: 100%;
@@ -94,10 +110,10 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: #00adef;
+  color: #0054a1;
 }
 .dropdown_wrapper .dropdown_container .dropdown_items:hover {
-  background: linear-gradient(90deg, #48f3ea 0, #029ad4 100%);
+  background: linear-gradient(90deg, #2a9afe 0, #0054a1 100%);
   color: #ffffff;
 }
 .dropdown_wrapper.show_dropdown .dropdown_container {
@@ -151,4 +167,70 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     opacity: 0;
     transform: translateY(-20px);
   }
+}
+.styled_button {
+  padding: 18px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.styled_button:active {
+  transform: scale(0.95);
+}
+.styled_button.primary {
+  background-color: #0054a1;
+  color: #fff;
+}
+.styled_button.primary:hover {
+  background-color: #2a9afe;
+}
+.styled_button.secondary {
+  background-color: #2a9afe;
+  color: #fff;
+}
+.styled_button.secondary:hover {
+  background-color: #0054a1;
+}
+.styled_button.f_sm {
+  font-size: 12px;
+}
+.styled_button.f_md {
+  font-size: 14px;
+}
+.styled_button.f_lg {
+  font-size: 16px;
+}
+.styled_button.icon_styles {
+  display: flex;
+  align-items: center;
+}
+.styled_button.icon_styles i {
+  margin-right: 10px;
+}
+.styled_button.icon_styles i.icon_sm {
+  font-size: 18px;
+}
+.styled_button.icon_styles i.icon_md {
+  font-size: 22px;
+}
+.styled_button.icon_styles i.icon_lg {
+  font-size: 26px;
+}
+.styled_button.animated {
+  position: relative;
+  padding: 12px 50px;
+  z-index: 1;
+}
+.styled_button.animated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  border-radius: 50px;
+  background-color: #2a9afe;
+  z-index: -1;
+}
+.styled_button.animated:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
