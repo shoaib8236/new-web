@@ -16,4 +16,54 @@ button {
 
 .nav_wrapper {
   width: 100%;
+  display: flex;
+  padding: 40px 10px;
+}
+.nav_wrapper .nav_cols {
+  max-height: 172px;
+  min-height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_wrapper .nav_cols.logo_wrapper {
+  width: 163px;
+}
+.nav_wrapper .nav_cols.logo_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.nav_wrapper .nav_cols.links_styles {
+  flex-grow: 1;
+}
+.nav_wrapper .nav_cols.links_styles a {
+  color: hsl(230deg, 61%, 14%);
+  font-size: 18px;
+  padding: 0 15px;
+  font-weight: 600;
+}
+
+.dropdown_wrapper {
+  position: relative;
+}
+.dropdown_wrapper a {
+  color: hsl(230deg, 61%, 14%);
+  font-size: 18px;
+  padding: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dropdown_wrapper .dropdown_container {
+  position: absolute;
+  z-index: 100;
+  background-color: #faf9f9;
+}
+.dropdown_wrapper .dropdown_container .dropdown_items {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

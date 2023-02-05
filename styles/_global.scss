@@ -16,5 +16,67 @@ button {
 // navbar stylings
 
 .nav_wrapper {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  padding: 40px 10px;
+
+  .nav_cols {
+    max-height: 172px;
+    min-height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.logo_wrapper {
+      width: 163px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &.links_styles {
+      flex-grow: 1;
+
+      a {
+        color: $text-color;
+        font-size: 18px;
+        padding: 0 15px;
+        font-weight: $medium;
+      }
+    }
+  }
+}
+
+// dropdown
+
+.dropdown_wrapper {
+  position: relative;
+
+  a {
+    color: $text_color;
+    font-size: 18px;
+    padding: 0 15px;
+    font-weight: $medium;
+    cursor: pointer;
+  }
+
+  .dropdown_container {
+    position: absolute;
+    z-index: 100;
+    background-color: $light_gray;
+
+    .dropdown_items {
+      height: 60px;
+      width: 150px;
+      display: flex;
+      padding: 15px;
+      align-items: center;
+    }
+  }
+}
+
+// footer stylings
+
+.footer_wrapper {
 }
