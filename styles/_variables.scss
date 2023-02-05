@@ -1,5 +1,9 @@
 $text_color: hsl(230, 61%, 14%);
 $light_gray: #faf9f9;
+$gradient_primary:linear-gradient(90deg,#48f3ea 0,#029ad4 100%);
+$primary:#00adef;
+$white:#ffffff;
+
 
 // fonts
 
@@ -7,3 +11,10 @@ $bolder: 800;
 $bold: 800;
 $medium: 600;
 $light: 400;
+
+// transitions 
+
+$transition_light:0.2s;
+$transition_medium:0.3s;
+$transition_hight:0.5s;
+$transition_extra_hight:0.8s;
