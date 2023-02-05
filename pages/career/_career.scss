@@ -26,19 +26,7 @@
                     font-size: $f_sm;
 
                 }
-
-                .btn-primary {
-                    color: $text-color;
-                    background-color: $white;
-                    border: $white;
-                    font-size: $f_sm;
-
-                    &:hover {
-                        color: $text-color;
-                        background-color: $green;
-                        border: $green;
-                    }
-                }
+                
             }
 
             .left-cards {
@@ -73,9 +61,6 @@
     .form-wrapper {
         .btn-primary {
             padding: 12px 50px;
-            color: $text-color;
-            background-color: $green;
-            border: $green;
         }
 
         input[type="file"] {

@@ -333,29 +333,6 @@ nav {
       background-color: $white;
       height: 0.1rem;
     }
-
-    .banner-btn{
-
-      .btn-primary{
-        background-color: #fff;
-        border-color: #fff;
-        font-weight: bold;
-        color:$text_color ;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-
-        span{
-          letter-spacing: 0.1rem;
-          font-family: 'Syne-bold';
-        }
-        &:hover{
-          background-color: $green;
-        }
-      }
-    }
   }
 }
 

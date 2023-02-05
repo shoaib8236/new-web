@@ -284,24 +284,6 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   background-color: #ffffff;
   height: 0.1rem;
 }
-.banner-wrapper .banner .banner-btn .btn-primary {
-  background-color: #fff;
-  border-color: #fff;
-  font-weight: bold;
-  color: hsl(230deg, 61%, 14%);
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-.banner-wrapper .banner .banner-btn .btn-primary span {
-  letter-spacing: 0.1rem;
-  font-family: "Syne-bold";
-}
-.banner-wrapper .banner .banner-btn .btn-primary:hover {
-  background-color: #a5cc67;
-}
 
 .career_wrapper .left .left-wrapper .left-body {
   display: flex;
@@ -320,17 +302,6 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-family: "Syne-regular";
   color: hsl(230deg, 61%, 14%);
   font-size: 24px;
-}
-.career_wrapper .left .left-wrapper .left-body .btn-primary {
-  color: hsl(230deg, 61%, 14%);
-  background-color: #ffffff;
-  border: #ffffff;
-  font-size: 24px;
-}
-.career_wrapper .left .left-wrapper .left-body .btn-primary:hover {
-  color: hsl(230deg, 61%, 14%);
-  background-color: #a5cc67;
-  border: #a5cc67;
 }
 .career_wrapper .left .left-wrapper .left-cards {
   display: flex;
@@ -353,9 +324,6 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 }
 .right .form-wrapper .btn-primary {
   padding: 12px 50px;
-  color: hsl(230deg, 61%, 14%);
-  background-color: #a5cc67;
-  border: #a5cc67;
 }
 .right .form-wrapper input[type=file] {
   display: none;
