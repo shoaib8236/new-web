@@ -17,6 +17,22 @@ button {
   border: none;
 }
 
+
+// colors  
+
+.color_secondary {
+  color: $secondary;
+}
+.color_primary{
+  color: $primary;
+}
+.bg_secondary {
+  background-color: $secondary;
+}
+.bg_primary{
+  background-color: $primary;
+}
+
 // navbar stylings
 
 nav {
@@ -79,7 +95,7 @@ nav {
   }
 }
 
-// dropdown
+// dropdown _____________________________________________________________________________________________
 
 .dropdown_wrapper {
   position: relative;
@@ -159,11 +175,82 @@ nav {
   }
 }
 
+// buttons stylings _____________________________________________________________________________________________
 
-// buttons stylings
+.styled_button {
+  padding: 18px 25px;
+  border-radius: 30px;
+  transition: $transition_medium;
 
+  &:active {
+    transform: scale(0.95);
+  }
 
-.styled_buttons {
+  &.primary {
+    background-color: $primary;
+    color: #fff;
 
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+  &.secondary {
+    background-color: $secondary;
+    color: #fff;
 
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &.f_sm {
+    font-size: 12px;
+  }
+  &.f_md {
+    font-size: 14px;
+  }
+  &.f_lg {
+    font-size: 16px;
+  }
+
+  &.icon_styles {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
+
+      &.icon_sm {
+        font-size: 18px;
+      }
+      &.icon_md {
+        font-size: 22px;
+      }
+      &.icon_lg {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &.animated {
+    position: relative;
+    padding: 12px 50px;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 45px;
+      border-radius: 50px;
+      background-color: $secondary;
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
 }
