@@ -279,6 +279,13 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   text-transform: capitalize;
   color: #ffffff;
 }
+.banner-wrapper .banner .primary {
+  background-color: #ffffff;
+  color: hsl(230deg, 61%, 14%);
+}
+.banner-wrapper .banner .primary:hover {
+  color: #ffffff;
+}
 .banner-wrapper .banner .underline {
   width: 15%;
   background-color: #ffffff;
@@ -302,6 +309,13 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-family: "Syne-regular";
   color: hsl(230deg, 61%, 14%);
   font-size: 24px;
+}
+.career_wrapper .left .left-wrapper .left-body .primary {
+  background-color: #ffffff;
+  color: hsl(230deg, 61%, 14%);
+}
+.career_wrapper .left .left-wrapper .left-body .primary:hover {
+  color: #ffffff;
 }
 .career_wrapper .left .left-wrapper .left-cards {
   display: flex;

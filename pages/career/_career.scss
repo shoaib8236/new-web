@@ -1,9 +1,5 @@
 .career_wrapper {
-
-
     .left {
-
-
         .left-wrapper {
             .left-body {
                 display: flex;
@@ -24,18 +20,27 @@
                     font-family: 'Syne-regular';
                     color: $text-color;
                     font-size: $f_sm;
+                }
+
+                .primary {
+                    background-color: $white;
+                    color: $text-color;
+
+                    &:hover {
+                        color: $white;
+                    }
 
                 }
-                
             }
 
             .left-cards {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 2rem;                
-                .card{                    
+                gap: 2rem;
 
-                    &:hover{
+                .card {
+
+                    &:hover {
                         transform: scale(1.03);
                     }
                 }
@@ -61,6 +66,7 @@
     .form-wrapper {
         .btn-primary {
             padding: 12px 50px;
+
         }
 
         input[type="file"] {

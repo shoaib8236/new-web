@@ -15,6 +15,7 @@ let dropdown = async (x, action) => {
 
 
 document.addEventListener("DOMContentLoaded", function(){
+
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
           document.getElementById('nav').classList.add('animated_nav');
@@ -23,3 +24,9 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
   }); 
+
+
+
+function sendEmail(event){
+
+};

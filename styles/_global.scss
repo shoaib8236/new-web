@@ -319,14 +319,24 @@ nav {
     align-items: center;
     gap: 2rem;
 
- .banner-heading{
-    h2 {
+    .banner-heading {
+      h2 {
         // font-size: $f_sm;
         font-family: 'Syne-semi-bold';
         text-transform: capitalize;
         color: $white ;
       }
- }
+    }
+
+    .primary {
+      background-color: $white;
+      color: $text-color;
+
+      &:hover {
+        color: $white;
+      }
+
+    }
 
     .underline {
       width: 15%;
@@ -335,4 +345,3 @@ nav {
     }
   }
 }
-
