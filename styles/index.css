@@ -510,69 +510,69 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   background-position: center;
 }
 
-.disability_wrapper {
+.children_wrapper {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
 }
-.disability_wrapper .banner {
+.children_wrapper .banner {
   background-image: url(../../assets/images/img11.PNG);
   height: 398px;
   width: 100%;
   background-size: cover;
   padding-top: 150px;
 }
-.disability_wrapper .banner .my_text h1 {
+.children_wrapper .banner .my_text h1 {
   font-size: 48px;
   color: #ffffff;
 }
-.disability_wrapper .banner .my_text .my_btn {
+.children_wrapper .banner .my_text .my_btn {
   background-color: #ffffff;
   margin: 20px 0 0 170px;
   width: 220px;
   font-size: 18px;
 }
-.disability_wrapper .banner1 {
+.children_wrapper .banner1 {
   padding-top: 50px;
 }
-.disability_wrapper .banner1 .my_text1 {
+.children_wrapper .banner1 .my_text1 {
   padding-left: 30px;
 }
-.disability_wrapper .banner1 .my_text1 h1 {
+.children_wrapper .banner1 .my_text1 h1 {
   font-size: 30px;
   color: #2a9afe;
   font-weight: 600;
 }
-.disability_wrapper .banner1 .my_text1 h1 span {
+.children_wrapper .banner1 .my_text1 h1 span {
   color: rgb(165, 204, 103);
 }
-.disability_wrapper .banner1 .my_text1 .h1 {
+.children_wrapper .banner1 .my_text1 .h1 {
   color: black;
 }
-.disability_wrapper .banner1 .my_text1 p {
+.children_wrapper .banner1 .my_text1 p {
   font-size: 18px;
 }
-.disability_wrapper .banner1 .my_text1 h5 {
+.children_wrapper .banner1 .my_text1 h5 {
   font-size: 18px;
 }
-.disability_wrapper .banner1 .my_text1 ul {
+.children_wrapper .banner1 .my_text1 ul {
   margin-left: 35px;
 }
-.disability_wrapper .banner1 .my_text1 ul li {
+.children_wrapper .banner1 .my_text1 ul li {
   font-size: 16px;
 }
-.disability_wrapper .banner1 .my_text1 button {
+.children_wrapper .banner1 .my_text1 button {
   margin: 70px 70px 0 90px;
   width: 250px;
 }
-.disability_wrapper .banner1 .my_img img {
+.children_wrapper .banner1 .my_img img {
   width: 88%;
   height: 475px;
   background-size: contain;
   background-position: center;
   margin: 0 0 10px 15px;
 }
-.disability_wrapper .banner1 .my_img .img {
+.children_wrapper .banner1 .my_img .img {
   width: 93%;
   margin: 0 !important;
 }
