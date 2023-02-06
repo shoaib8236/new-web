@@ -1,6 +1,18 @@
-.contact_warpper{
-    background-image: url(../../assets/images/img2.webp);
-    background-size: cover;
+.contact_wrapper{
+    
     width: 100%;
-    height: 500px;
+    height: 900px;
+    background-image: url('../../assets/images/img1.webp');
+    background-size: cover;
+    padding-top: 400px;
+    
+    h1{
+        font-size: $f_lg;
+        color: $white;
+    }
+    h6{
+        color: $white;
+        font-size: $f_txt_sm;
+    }
+
 }

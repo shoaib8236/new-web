@@ -376,9 +376,430 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   width: 100%;
 }
 
-.contact_warpper {
-  background-image: url(../../assets/images/img2.webp);
-  background-size: cover;
+.contact_wrapper {
   width: 100%;
-  height: 500px;
+  height: 900px;
+  background-image: url("../../assets/images/img1.webp");
+  background-size: cover;
+  padding-top: 400px;
+}
+.contact_wrapper h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.contact_wrapper h6 {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.mental_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.mental_wrapper .banner {
+  background-image: url(../../assets/images/img3.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.mental_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.mental_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 40px;
+  width: 210px;
+  font-size: 18px;
+}
+.mental_wrapper .banner1 {
+  padding-top: 50px;
+}
+.mental_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.mental_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.mental_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.mental_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.mental_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.mental_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.mental_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.mental_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.mental_wrapper .banner1 .my_img img {
+  width: 90%;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+}
+
+.disability_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.disability_wrapper .banner {
+  background-image: url(../../assets/images/img3.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.disability_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.disability_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 170px;
+  width: 220px;
+  font-size: 18px;
+}
+.disability_wrapper .banner1 {
+  padding-top: 50px;
+}
+.disability_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.disability_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.disability_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.disability_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.disability_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.disability_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.disability_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.disability_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.disability_wrapper .banner1 .my_img img {
+  width: 90%;
+  height: 475px;
+  background-size: contain;
+  background-position: center;
+}
+
+.children_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.children_wrapper .banner {
+  background-image: url(../../assets/images/img11.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.children_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.children_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 170px;
+  width: 220px;
+  font-size: 18px;
+}
+.children_wrapper .banner1 {
+  padding-top: 50px;
+}
+.children_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.children_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.children_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.children_wrapper .banner1 .my_text1 .h1 {
+  color: black;
+}
+.children_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.children_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.children_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.children_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.children_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.children_wrapper .banner1 .my_img img {
+  width: 88%;
+  height: 475px;
+  background-size: contain;
+  background-position: center;
+  margin: 0 0 10px 15px;
+}
+.children_wrapper .banner1 .my_img .img {
+  width: 93%;
+  margin: 0 !important;
+}
+
+.support_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.support_wrapper .banner {
+  background-image: url(../../assets/images/img3.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.support_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.support_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 130px;
+  width: 200px;
+  font-size: 18px;
+}
+.support_wrapper .banner1 {
+  padding-top: 50px;
+}
+.support_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.support_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.support_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.support_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.support_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.support_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.support_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.support_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.support_wrapper .banner1 .my_img img {
+  width: 90%;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+}
+
+.respite_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.respite_wrapper .banner {
+  background-image: url(../../assets/images/img3.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.respite_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.respite_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 -20px;
+  width: 200px;
+  font-size: 18px;
+}
+.respite_wrapper .banner1 {
+  padding-top: 50px;
+}
+.respite_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.respite_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.respite_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.respite_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.respite_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.respite_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.respite_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.respite_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.respite_wrapper .banner1 .my_img img {
+  width: 90%;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cleaning_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.cleaning_wrapper .banner {
+  background-image: url(../../assets/images/img10.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.cleaning_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.cleaning_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 95px;
+  width: 200px;
+  font-size: 18px;
+}
+.cleaning_wrapper .banner1 {
+  padding-top: 50px;
+}
+.cleaning_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.cleaning_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.cleaning_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.cleaning_wrapper .banner1 .my_text1 p {
+  font-size: 18px;
+}
+.cleaning_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.cleaning_wrapper .banner1 .my_text1 ul {
+  margin-left: 35px;
+}
+.cleaning_wrapper .banner1 .my_text1 ul li {
+  font-size: 16px;
+}
+.cleaning_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.cleaning_wrapper .banner1 .my_img img {
+  width: 90%;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+}
+
+.counselling_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.counselling_wrapper .banner {
+  background-image: url(../../assets/images/img3.PNG);
+  height: 398px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 150px;
+}
+.counselling_wrapper .banner .my_text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.counselling_wrapper .banner .my_text .my_btn {
+  background-color: #ffffff;
+  margin: 20px 0 0 25px;
+  width: 200px;
+  font-size: 18px;
+}
+.counselling_wrapper .banner1 {
+  padding-top: 50px;
+}
+.counselling_wrapper .banner1 .my_text1 {
+  padding-left: 30px;
+}
+.counselling_wrapper .banner1 .my_text1 h1 {
+  font-size: 30px;
+  color: #2a9afe;
+  font-weight: 600;
+}
+.counselling_wrapper .banner1 .my_text1 h1 span {
+  color: rgb(165, 204, 103);
+}
+.counselling_wrapper .banner1 .my_text1 h5 {
+  font-size: 18px;
+}
+.counselling_wrapper .banner1 .my_text1 button {
+  margin: 70px 70px 0 90px;
+  width: 250px;
+}
+.counselling_wrapper .banner1 .my_img img {
+  width: 65%;
+  height: 519px;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=index.css.map */

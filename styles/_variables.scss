@@ -1,10 +1,9 @@
 $text_color: hsl(230, 61%, 14%);
 $light_gray: #faf9f9;
-$gradient_primary:linear-gradient(90deg,#2a9afe 0,#0054a1 100%);
-$primary:#0054a1;
-$secondary:#2a9afe;
-$white:#ffffff;
-
+$gradient_primary: linear-gradient(90deg, #2a9afe 0, #0054a1 100%);
+$primary: #0054a1;
+$secondary: #2a9afe;
+$white: #ffffff;
 
 // fonts
 
@@ -13,9 +12,20 @@ $bold: 800;
 $medium: 600;
 $light: 400;
 
-// transitions 
+// transitions
 
-$transition_light:0.2s;
-$transition_medium:0.3s;
-$transition_hight:0.5s;
-$transition_extra_high:0.8s;
+$transition_light: 0.2s;
+$transition_medium: 0.3s;
+$transition_hight: 0.5s;
+$transition_extra_high: 0.8s;
+
+// font sizes
+
+$f_sm: 24px;
+$f_md: 30px;
+$f_lg: 48px;
+$f_xlg: 60px;
+
+$f_txt_lg: 22px;
+$f_txt_sm: 16px;
+$f_txt_md: 18px;
