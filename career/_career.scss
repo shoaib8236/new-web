@@ -1,0 +1,77 @@
+.career_wrapper {
+
+
+    .left {
+
+
+        .left-wrapper {
+            .left-body {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+
+                h2 {
+                    color: $green;
+                    letter-spacing: 0.2rem;
+
+                    span {
+                        color: $secondary;
+                    }
+                }
+
+                p {
+                    font-family: 'Syne-regular';
+                    color: $text-color;
+                    font-size: $f_sm;
+
+                }
+                
+            }
+
+            .left-cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;                
+                .card{                    
+
+                    &:hover{
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.right {
+    background-color: $light_gray;
+
+    .form-headings {
+        h2 {
+            color: $green;
+            letter-spacing: 0.2rem;
+
+            span {
+                color: $secondary;
+            }
+        }
+    }
+
+    .form-wrapper {
+        .btn-primary {
+            padding: 12px 50px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+}

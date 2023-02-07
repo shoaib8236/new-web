@@ -1,0 +1,38 @@
+.counselling_wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+
+  .banner1 {
+    padding-top: 50px;
+
+    .my_text1 {
+      padding-left: 30px;
+
+      h1 {
+        font-size: $f_md;
+        color: $secondary;
+        font-weight: $medium;
+
+        span {
+          color: rgb(165, 204, 103);
+        }
+      }
+      h5 {
+        font-size: $f_txt_md;
+      }
+      button {
+        margin: 70px 70px 0 90px;
+        width: 250px;
+      }
+    }
+    .my_img {
+      img {
+        width: 65%;
+        height: 519px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
