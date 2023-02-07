@@ -1,60 +1,184 @@
 .home_wrapper {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+  .banner {
     width: 100%;
+    background: url("https://lirp.cdn-website.com/209424e0/dms3rep/multi/opt/hero-bg-fc354259-1920w.jpg");
+    height: 620px;
+    object-fit: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: $green;
+      font-size: $f_xlg;
+      font-weight: $normal;
+    }
+    .h1 {
+      color: $secondary;
+    }
+    h5 {
+      font-size: $f_sm;
+      color: $green;
+    }
+    .underline {
+      height: 2px;
+      width: 73px;
+      background-color: $secondary;
+      margin: 20px 0;
+    }
+    h6 {
+      font-size: $f_txt_md;
+    }
+    .btns {
+      margin: 40px 0;
+    }
+  }
+  .banner1 {
     height: auto;
-    box-sizing: border-box;
+    width: 100%;
+    margin: 50px 0;
 
-    .banner{
+    h1 {
+      font-size: $f_lg;
+      color: $blue;
+    }
+    .h1 {
+      color: $green;
+    }
+
+    .banner_content {
+      font-size: $f_txt_lg;
+      text-align: center;
+    }
+  }
+}
+
+.form_container {
+  background-color: $primary;
+
+  .form_container_title {
+    color: $white;
+    font-size: $f_lg;
+    text-align: center;
+  }
+  .form_container_desc {
+    color: $white;
+    text-align: center;
+  }
+
+  .contact_title {
+    color: $white;
+    font-size: $f_sm;
+    margin-bottom: 30px;
+  }
+
+  form {
+    width: 100%;
+
+    label {
+      color: $white;
+    }
+  }
+}
+
+.intro_container {
+  background-color: #f6f6e9;
+  .c_container {
+    padding: 0 40px;
+    // border-radius: 20px;
+  }
+
+  .intro_cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: $f_lg;
+    }
+    p {
+      font-size: $f_txt_md;
+    }
+
+    .inr_title {
+      font-size: $f_md;
+    }
+
+    ul {
+      margin-left: 40px;
+      padding: 20px 0;
+    }
+
+    .animated_button {
+      width: max-content;
+      max-width: max-content;
+    }
+
+    &.img {
+      transform: translateY(-40px);
+      max-height: 340px;
+
+      img {
         width: 100%;
-        background: url('https://lirp.cdn-website.com/209424e0/dms3rep/multi/opt/hero-bg-fc354259-1920w.jpg');
-        height: 620px;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
         object-fit: cover;
-        background-position: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        transition: $transition_medium;
 
-        h1{
-            color: $green;
-            font-size: $f_xlg;
-            font-weight:$normal ;
+        &:hover {
+          transform: scale(1.05);
         }
-        .h1{
-            color: $secondary;
-        }
-        h5{
-            font-size: $f_sm;
-            color: $green;
-        }
-        .underline{
-            height:2px;
-            width: 73px;
-            background-color:$secondary ;
-            margin: 20px 0;
-        }
-        h6{
-            font-size: $f_txt_md;
-        }
-        .btns{
-            padding: 20px;
-            button{
-                height: 60px;
-                width:280px;
-                margin: 0 10px;
+      }
+    }
+  }
+
+  &.container_style {
+    background-color: transparent;
+    margin-top: 60px;
+
+    .c_container {
+      background-color: #f6f6e9;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      padding-bottom: 80px;
+
+      .row {
+        flex-direction: row-reverse;
+
+        .intro_cols {
+          &.img {
+            transform: translate(-85px, -40px);
+            max-height: 500px;
+
+            img {
+              width: calc(100% + 60px);
+              height: 100%;
+              border-radius: 20px;
+              overflow: hidden;
+              object-fit: cover;
+              transition: $transition_medium;
+
+              &:hover {
+                transform: scale(1.05);
+              }
             }
+          }
         }
+      }
     }
-    .banner1{
-        height: auto;
-        width: 100%;
-        margin: 50px 0;
+  }
+}
 
-        h1{
-            font-size: $f_lg;
-            color: $blue;
-        }
-        .h1{
-            color:$green;
-        }
-    }
+.end_container {
+  .end_title {
+    font-size: $f_lg;
+    text-align: center;
+  }
 }
