@@ -408,7 +408,7 @@ nav {
 
 .banner-wrapper {
   background-size: cover !important;
-  height: 50vh;
+  height:calc(100vh - 226px);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -429,7 +429,7 @@ nav {
     .banner-heading {
       h2 {
         //
-        // font-size: $f_sm;
+        font-size: $f_lg;
         font-family: "Syne-semi-bold";
         text-transform: capitalize;
         color: $white;
@@ -446,7 +446,7 @@ nav {
     }
 
     .underline {
-      width: 15%;
+      width: 10%;
       background-color: $white;
       height: 0.1rem;
     }
