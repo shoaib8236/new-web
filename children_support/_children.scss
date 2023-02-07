@@ -17,7 +17,7 @@
         font-weight: $medium;
 
         span{
-          color: rgb(165, 204, 103);
+          color:$green;
         }
       }
       .h1{
@@ -71,12 +71,12 @@
         color: $secondary;
         letter-spacing: 2px;
         span {
-          color: #a5cc66;
+          color: $green;
         }
       }
       .underline {
         width: 20%;
-        background-color: rgba(165, 204, 103, 1);
+        background-color: $green;
         height: 0.01rem;
         margin: 15px 0;
       }
@@ -102,7 +102,7 @@
           letter-spacing: 1px;
         }
         p {
-          color: #a5cc66;
+          color: $green;
           font-size: 16px;
         }
         button {
@@ -145,12 +145,12 @@
           color: $secondary;
           letter-spacing: 2px;
           span {
-            color: #a5cc66;
+            color: $green;
           }
         }
         .underline {
           width: 20%;
-          background-color: rgba(165, 204, 103, 1);
+          background-color: $green;
           height: 0.01rem;
           margin: 15px 0;
         }
@@ -179,7 +179,7 @@
             letter-spacing: 1px;
           }
           p {
-            color: #a5cc66;
+            color: $green;
             font-size: 16px;
           }
           button {
@@ -223,12 +223,12 @@
           color: $secondary;
           letter-spacing: 2px;
           span {
-            color: #a5cc66;
+            color: $green;
           }
         }
         .underline {
           width: 20%;
-          background-color: rgba(165, 204, 103, 1);
+          background-color: $green;
           height: 0.01rem;
           margin: 15px 0;
         }

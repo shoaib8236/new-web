@@ -418,6 +418,65 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: 0.1rem;
 }
 
+.home_wrapper {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.home_wrapper .banner {
+  width: 100%;
+  background: url("https://lirp.cdn-website.com/209424e0/dms3rep/multi/opt/hero-bg-fc354259-1920w.jpg");
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home_wrapper .banner h1 {
+  color: #a5cc67;
+  font-size: 60px;
+  font-weight: 700;
+}
+.home_wrapper .banner .h1 {
+  color: #2a9afe;
+}
+.home_wrapper .banner h5 {
+  font-size: 24px;
+  color: #a5cc67;
+}
+.home_wrapper .banner .underline {
+  height: 2px;
+  width: 73px;
+  background-color: #2a9afe;
+  margin: 20px 0;
+}
+.home_wrapper .banner h6 {
+  font-size: 18px;
+}
+.home_wrapper .banner .btns {
+  padding: 20px;
+}
+.home_wrapper .banner .btns button {
+  height: 60px;
+  width: 280px;
+  margin: 0 10px;
+}
+.home_wrapper .banner1 {
+  height: auto;
+  width: 100%;
+  margin: 50px 0;
+}
+.home_wrapper .banner1 h1 {
+  font-size: 48px;
+  color: rgb(37, 150, 190);
+}
+.home_wrapper .banner1 .h1 {
+  color: #a5cc67;
+}
+
 .contact_wrapper {
   width: 100%;
   height: 900px;
@@ -451,11 +510,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .mental_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .mental_wrapper .banner1 .my_text1 .underline {
   width: 8%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -502,11 +561,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .mental_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .mental_wrapper .banner2 .my_text1 .underline {
   width: 20%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -532,7 +591,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .mental_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .mental_wrapper .banner2 .cards .card button {
@@ -568,11 +627,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .mental_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .mental_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -602,7 +661,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .mental_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .mental_wrapper .banner2 .cards .card button {
@@ -638,11 +697,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .mental_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .mental_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -676,7 +735,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .disability_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .disability_wrapper .banner1 .my_text1 p {
   font-size: 18px;
@@ -720,11 +779,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .disability_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .disability_wrapper .banner2 .my_text1 .underline {
   width: 20%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -750,7 +809,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .disability_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .disability_wrapper .banner2 .cards .card button {
@@ -786,7 +845,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .disability_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .disability_wrapper .banner2 .my_text1 .underline {
     width: 20%;
@@ -820,7 +879,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .disability_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .disability_wrapper .banner2 .cards .card button {
@@ -856,7 +915,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .disability_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .disability_wrapper .banner2 .my_text1 .underline {
     width: 20%;
@@ -894,7 +953,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .children_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .children_wrapper .banner1 .my_text1 .h1 {
   color: black;
@@ -943,11 +1002,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .children_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .children_wrapper .banner2 .my_text1 .underline {
   width: 20%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -973,7 +1032,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .children_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .children_wrapper .banner2 .cards .card button {
@@ -1009,11 +1068,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .children_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .children_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1043,7 +1102,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .children_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .children_wrapper .banner2 .cards .card button {
@@ -1079,11 +1138,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .children_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .children_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1117,7 +1176,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .support_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .support_wrapper .banner1 .my_text1 p {
   font-size: 18px;
@@ -1160,11 +1219,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .support_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .support_wrapper .banner2 .my_text1 .underline {
   width: 20%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -1190,7 +1249,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .support_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .support_wrapper .banner2 .cards .card button {
@@ -1226,11 +1285,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .support_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .support_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1260,7 +1319,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .support_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .support_wrapper .banner2 .cards .card button {
@@ -1296,11 +1355,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .support_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .support_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1334,7 +1393,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .respite_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .respite_wrapper .banner1 .my_text1 p {
   font-size: 18px;
@@ -1377,11 +1436,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .respite_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .respite_wrapper .banner2 .my_text1 .underline {
   width: 20%;
-  background-color: rgb(165, 204, 103);
+  background-color: #a5cc67;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -1407,7 +1466,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .respite_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .respite_wrapper .banner2 .cards .card button {
@@ -1443,11 +1502,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .respite_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .respite_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1477,7 +1536,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .respite_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .respite_wrapper .banner2 .cards .card button {
@@ -1513,11 +1572,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .respite_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .respite_wrapper .banner2 .my_text1 .underline {
     width: 20%;
-    background-color: rgb(165, 204, 103);
+    background-color: #a5cc67;
     height: 0.01rem;
     margin: 15px 0;
   }
@@ -1551,7 +1610,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .cleaning_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .cleaning_wrapper .banner1 .my_text1 p {
   font-size: 18px;
@@ -1594,7 +1653,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .cleaning_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .cleaning_wrapper .banner2 .my_text1 .underline {
   width: 20%;
@@ -1624,7 +1683,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .cleaning_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .cleaning_wrapper .banner2 .cards .card button {
@@ -1660,7 +1719,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .cleaning_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .cleaning_wrapper .banner2 .my_text1 .underline {
     width: 20%;
@@ -1694,7 +1753,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .cleaning_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .cleaning_wrapper .banner2 .cards .card button {
@@ -1730,7 +1789,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .cleaning_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .cleaning_wrapper .banner2 .my_text1 .underline {
     width: 20%;
@@ -1768,7 +1827,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   font-weight: 600;
 }
 .counselling_wrapper .banner1 .my_text1 h1 span {
-  color: rgb(165, 204, 103);
+  color: #a5cc67;
 }
 .counselling_wrapper .banner1 .my_text1 h5 {
   font-size: 18px;
@@ -1802,7 +1861,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 2px;
 }
 .counselling_wrapper .banner2 .my_text1 h1 span {
-  color: #a5cc66;
+  color: #a5cc67;
 }
 .counselling_wrapper .banner2 .my_text1 .underline {
   width: 20%;
@@ -1832,7 +1891,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   letter-spacing: 1px;
 }
 .counselling_wrapper .banner2 .cards .card p {
-  color: #a5cc66;
+  color: #a5cc67;
   font-size: 16px;
 }
 .counselling_wrapper .banner2 .cards .card button {
@@ -1868,7 +1927,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .counselling_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .counselling_wrapper .banner2 .my_text1 .underline {
     width: 20%;
@@ -1902,7 +1961,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 1px;
   }
   .counselling_wrapper .banner2 .cards .card p {
-    color: #a5cc66;
+    color: #a5cc67;
     font-size: 16px;
   }
   .counselling_wrapper .banner2 .cards .card button {
@@ -1937,7 +1996,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     letter-spacing: 2px;
   }
   .counselling_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc66;
+    color: #a5cc67;
   }
   .counselling_wrapper .banner2 .my_text1 .underline {
     width: 20%;
