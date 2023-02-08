@@ -4,10 +4,10 @@ let dropdown = async (x, action) => {
     node.classList.add("show_dropdown");
   } else {
     node.classList.remove("show_dropdown");
-    node.classList.add("exit_dropdown");
-    let timer = setTimeout(() => {
-      node.classList.remove("exit_dropdown");
-    }, 800);
+    // node.classList.add("exit_dropdown");
+    // let timer = setTimeout(() => {
+    //   node.classList.remove("exit_dropdown");
+    // }, 600);
 
     return () => clearTimeout(timer);
   }
