@@ -1,0 +1,113 @@
+.counselling_wrapper {
+  width: 100%;
+  height: auto;
+
+  .banner1 {
+    padding-top: 50px;
+
+    .my_text1 {
+      padding-left: 30px;
+
+      h1 {
+        font-size: $f_md;
+        color: $secondary;
+        font-weight: $medium;
+
+        span {
+          color: $green;
+        }
+      }
+      h5 {
+        font-size: $f_txt_md;
+      }
+      .btns {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap:2rem;
+        align-items: center;
+        justify-content: space-around;
+        button {
+          width: 200px;
+        }
+      }
+    }
+        .my_img {
+          img {
+            width: 70%;
+            //  height: fit-content;
+            object-fit: cover;
+            background-position: center;
+          }
+        }
+  }
+  .banner2 {
+    .my_text1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: $f_lg;
+        color: $secondary;
+        letter-spacing: 2px;
+        span {
+          color: $green;
+        }
+      }
+      .underline {
+        width: 20%;
+        background-color: rgba(165, 204, 103, 1);
+        height: 0.01rem;
+        margin: 15px 0;
+      }
+    }
+    .cards {
+      width: 100%;
+      height: auto;
+      display: flex;
+
+      .card {
+        width: 18% !important;
+        margin: 10px 10px 10px 2px;
+
+        img {
+          height: 350px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 25%;
+        }
+        h3 {
+          color: $secondary;
+          font-size: $f_sm;
+          letter-spacing: 1px;
+        }
+        p {
+          color: $green;
+          font-size: 16px;
+        }
+        button {
+          width: 100%;
+          font-size: 8px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .counselling_wrapper {
+    .banner1 {
+      .my_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .banner2 {
+      margin: 0;
+    }
+  }
+}

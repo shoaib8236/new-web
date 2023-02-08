@@ -195,9 +195,11 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   }
 }
 .wrapper {
-  width: 100%;
+  margin-top: -10rem;
 }
 .wrapper .form_wrapper {
+  position: relative;
+  bottom: -200px;
   background-color: #2a9afe;
   font-size: 24px;
   border-radius: 2rem;
@@ -220,7 +222,6 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .wrapper .form_wrapper .conatct_details_warpper .details p span {
   font-family: "Syne-bold" !important;
   color: #a5cc67;
-  margin-right: 0.5rem;
 }
 .wrapper .form_wrapper .contact_form_wrapper h2 {
   font-family: "Syne-semi-bold" !important;
@@ -242,7 +243,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .wrapper .footer_wrapper {
   font-family: "Syne-semi-bold" !important;
   background-color: #0054a1;
-  width: 100%;
+  width: 100vw;
   padding: 300px 1rem 2rem 1rem;
 }
 .wrapper .footer_wrapper .footer_container {
@@ -282,6 +283,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 }
 .wrapper .footer_wrapper .footer_container .cols .links a:hover {
   text-decoration: underline;
+  color: #a5cc67;
   text-decoration-color: #a5cc67;
   text-underline-offset: 1rem;
 }
@@ -544,7 +546,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .flex_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1rem;
 }
 .flex_cards .styled_rounded_card {
   min-width: 200px;
@@ -692,6 +694,31 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     color: #0054a1;
     margin-right: 10px;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .form_wrapper {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  .wrapper .form_wrapper .conatct_details_warpper h2 {
+    font-size: 30px;
+  }
+  .wrapper .form_wrapper .contact_form_wrapper h2 {
+    font-size: 25px;
+  }
+  .wrapper .form_wrapper .contact_form_wrapper form .form-row label {
+    font-size: 18px;
+  }
+  .wrapper .footer_wrapper .cols {
+    text-align: center;
+  }
+  .wrapper .footer_wrapper .cols h2,
+  .wrapper .footer_wrapper .cols .links {
+    text-align: left;
+  }
+  .banner-wrapper .banner .banner-heading h2 {
+    font-size: 24px;
   }
 }
 .home_wrapper {
@@ -912,26 +939,16 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     font-size: 28px;
   }
 }
-.contact_wrapper {
-  width: 100%;
-  height: 900px;
-  background-image: url("../assests/images//img1.webp");
-  background-size: cover;
-  padding-top: 400px;
+.contact-us .wrapper {
+  margin-top: 20rem;
 }
-.contact_wrapper h1 {
-  font-size: 48px;
-  color: #ffffff;
-}
-.contact_wrapper h6 {
-  color: #ffffff;
-  font-size: 16px;
+.contact-us .banner-wrapper {
+  height: unset;
 }
 
 .mental_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .mental_wrapper .banner1 {
   padding-top: 50px;
@@ -949,7 +966,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 }
 .mental_wrapper .banner1 .my_text1 .underline {
   width: 8%;
-  background-color: #a5cc67;
+  background-color: #0054a1;
   height: 0.01rem;
   margin: 15px 0;
 }
@@ -968,14 +985,15 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .mental_wrapper .banner1 .my_text1 .btns {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  gap: 2rem;
 }
 .mental_wrapper .banner1 .my_text1 .btns button {
   width: 250px;
 }
 .mental_wrapper .banner1 .my_img img {
   width: 90%;
-  height: 475px;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
@@ -1035,128 +1053,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .mental_wrapper {
+@media screen and (max-width: 768px) {
+  .mental_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .mental_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .mental_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .mental_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .mental_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .mental_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .mental_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .mental_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .mental_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .mental_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .mental_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .mental_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .mental_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .mental_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .mental_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .mental_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .mental_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .mental_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .mental_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .mental_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .mental_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .mental_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .mental_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .mental_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .mental_wrapper .banner2 {
+    margin: 0;
   }
 }
 .disability_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .disability_wrapper .banner1 {
   padding-top: 50px;
@@ -1187,6 +1094,8 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .disability_wrapper .banner1 .my_text1 .btns {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-around;
 }
 .disability_wrapper .banner1 .my_text1 .btns button {
@@ -1194,7 +1103,6 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 }
 .disability_wrapper .banner1 .my_img img {
   width: 90%;
-  height: 475px;
   background-size: contain;
   background-position: center;
 }
@@ -1253,128 +1161,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .disability_wrapper {
+@media screen and (max-width: 768px) {
+  .disability_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .disability_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .disability_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .disability_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .disability_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .disability_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .disability_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .disability_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .disability_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .disability_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .disability_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .disability_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .disability_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .disability_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .disability_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .disability_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .disability_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .disability_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .disability_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .disability_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .disability_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .disability_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .disability_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .disability_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .disability_wrapper .banner2 {
+    margin: 0;
   }
 }
 .children_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .children_wrapper .banner1 {
   padding-top: 50px;
@@ -1408,21 +1205,32 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .children_wrapper .banner1 .my_text1 .btns {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-around;
 }
 .children_wrapper .banner1 .my_text1 .btns button {
   width: 250px;
 }
+.children_wrapper .banner1 .my_img {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+}
 .children_wrapper .banner1 .my_img img {
-  width: 88%;
-  height: 475px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 90%;
+  background-size: contain;
   background-position: center;
-  margin: 0 0 10px 15px;
+}
+.children_wrapper .banner1 .my_img img:first-child {
+  padding: 1rem;
+}
+.children_wrapper .banner1 .my_img img:hover {
+  transform: scale(1.01);
 }
 .children_wrapper .banner1 .my_img .img {
-  width: 93%;
+  width: 90%;
   margin: 0 !important;
 }
 .children_wrapper .banner2 .my_text1 {
@@ -1476,128 +1284,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .children_wrapper {
+@media screen and (max-width: 768px) {
+  .children_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .children_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .children_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .children_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .children_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .children_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .children_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .children_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .children_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .children_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .children_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .children_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .children_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .children_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .children_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .children_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .children_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .children_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .children_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .children_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .children_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .children_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .children_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .children_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .children_wrapper .banner2 {
+    margin: 0;
   }
 }
 .support_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .support_wrapper .banner1 {
   padding-top: 50px;
@@ -1629,6 +1326,8 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-around;
 }
 .support_wrapper .banner1 .my_text1 .btns button {
@@ -1636,10 +1335,10 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   margin: 10px 0;
 }
 .support_wrapper .banner1 .my_img img {
-  width: 90%;
-  height: 475px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 75%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-size: contain;
   background-position: center;
 }
 .support_wrapper .banner2 .my_text1 {
@@ -1693,128 +1392,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .support_wrapper {
+@media screen and (max-width: 768px) {
+  .support_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .support_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .support_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .support_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .support_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .support_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .support_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .support_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .support_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .support_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .support_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .support_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .support_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .support_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .support_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .support_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .support_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .support_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .support_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .support_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .support_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .support_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .support_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .support_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .support_wrapper .banner2 {
+    margin: 0;
   }
 }
 .respite_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .respite_wrapper .banner1 {
   padding-top: 50px;
@@ -1845,6 +1433,8 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .respite_wrapper .banner1 .my_text1 .btns {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
   justify-content: space-around;
 }
@@ -1853,8 +1443,9 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   margin: 10px 0;
 }
 .respite_wrapper .banner1 .my_img img {
-  width: 90%;
-  height: 475px;
+  width: 70%;
+  height: -moz-fit-content;
+  height: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
@@ -1910,128 +1501,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .respite_wrapper {
+@media screen and (max-width: 768px) {
+  .respite_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .respite_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .respite_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .respite_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .respite_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .respite_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .respite_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .respite_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .respite_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .respite_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .respite_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .respite_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .respite_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .respite_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .respite_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .respite_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .respite_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .respite_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .respite_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .respite_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .respite_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: #a5cc67;
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .respite_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .respite_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .respite_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .respite_wrapper .banner2 {
+    margin: 0;
   }
 }
 .cleaning_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .cleaning_wrapper .banner1 {
   padding-top: 50px;
@@ -2063,6 +1543,8 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-around;
 }
 .cleaning_wrapper .banner1 .my_text1 .btns button {
@@ -2070,8 +1552,7 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   margin: 10px 0;
 }
 .cleaning_wrapper .banner1 .my_img img {
-  width: 90%;
-  height: 475px;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
@@ -2127,128 +1608,17 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .cleaning_wrapper {
+@media screen and (max-width: 768px) {
+  .cleaning_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .cleaning_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .cleaning_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .cleaning_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .cleaning_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .cleaning_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .cleaning_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .cleaning_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .cleaning_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .cleaning_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .cleaning_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .cleaning_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .cleaning_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .cleaning_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .cleaning_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .cleaning_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .cleaning_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .cleaning_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .cleaning_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .cleaning_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .cleaning_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .cleaning_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .cleaning_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .cleaning_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .cleaning_wrapper .banner2 {
+    margin: 0;
   }
 }
 .counselling_wrapper {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 .counselling_wrapper .banner1 {
   padding-top: 50px;
@@ -2270,16 +1640,16 @@ nav.animated_nav .nav_cols.logo_wrapper img {
 .counselling_wrapper .banner1 .my_text1 .btns {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
   justify-content: space-around;
 }
 .counselling_wrapper .banner1 .my_text1 .btns button {
   width: 200px;
-  margin: 80px 0;
 }
 .counselling_wrapper .banner1 .my_img img {
-  width: 65%;
-  height: 519px;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
@@ -2335,121 +1705,12 @@ nav.animated_nav .nav_cols.logo_wrapper img {
   height: auto;
 }
 
-@media (min-width: 360px) and (max-width: 800px) {
-  .counselling_wrapper {
+@media screen and (max-width: 768px) {
+  .counselling_wrapper .banner1 .my_img img {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px;
   }
-  .counselling_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .counselling_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .counselling_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .counselling_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .counselling_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .counselling_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .counselling_wrapper .banner2 .cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .counselling_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .counselling_wrapper .banner2 .cards .card {
-    width: 100% !important;
-    margin: 10px 10px 10px 2px;
-  }
-  .counselling_wrapper .banner2 .cards .card img {
-    height: 350px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25%;
-  }
-  .counselling_wrapper .banner2 .cards .card h3 {
-    color: #2a9afe;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
-  .counselling_wrapper .banner2 .cards .card p {
-    color: #a5cc67;
-    font-size: 16px;
-  }
-  .counselling_wrapper .banner2 .cards .card button {
-    width: 100%;
-    font-size: 8px;
-    height: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .counselling_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  .counselling_wrapper .banner1 .my_text1 .btns {
-    width: 100%;
-    display: flex;
-  }
-  .counselling_wrapper .banner1 .my_text1 .btns button {
-    width: 200px;
-    margin: 10px 0 !important;
-  }
-  .counselling_wrapper .banner2 .my_text1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .counselling_wrapper .banner2 .my_text1 h1 {
-    font-size: 48px;
-    color: #2a9afe;
-    letter-spacing: 2px;
-  }
-  .counselling_wrapper .banner2 .my_text1 h1 span {
-    color: #a5cc67;
-  }
-  .counselling_wrapper .banner2 .my_text1 .underline {
-    width: 20%;
-    background-color: rgb(165, 204, 103);
-    height: 0.01rem;
-    margin: 15px 0;
-  }
-  .counselling_wrapper .banner2 .cards {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .counselling_wrapper .banner2 .cards .card1 {
-    margin-left: 0 !important;
-  }
-  .counselling_wrapper .banner2 .cards .card {
-    width: 50% !important;
-    margin: 10px 10px 10px 2px;
+  .counselling_wrapper .banner2 {
+    margin: 0;
   }
 }
 .career_wrapper .left .left-wrapper .left-body {
