@@ -32,12 +32,13 @@
 }
 
 body {
-  padding-top: 225px;
+  // padding-top: 225px;
 }
 
 a {
   text-decoration: none;
 }
+
 button {
   background-color: transparent;
   border: none;
@@ -59,12 +60,15 @@ section {
 .color_secondary {
   color: $secondary;
 }
+
 .color_primary {
   color: $primary;
 }
+
 .bg_secondary {
   background-color: $secondary;
 }
+
 .bg_primary {
   background-color: $primary;
 }
@@ -82,6 +86,7 @@ nav {
   transition: $transition_light;
   top: 0;
   left: 0;
+
   .nav_wrapper {
     width: 100%;
     display: flex;
@@ -93,6 +98,7 @@ nav {
 
       &.logo_wrapper {
         width: 150px;
+
         img {
           width: 150px;
           height: 150px;
@@ -100,10 +106,11 @@ nav {
           transition: $transition_light;
         }
       }
+
       &.links_styles {
         flex-grow: 1;
 
-        > a {
+        >a {
           color: $text-color;
           font-size: 20px;
           margin: 0 20px;
@@ -133,7 +140,7 @@ nav {
 .dropdown_wrapper {
   position: relative;
 
-  > a {
+  >a {
     color: $text_color;
     font-size: 20px;
     margin: 0 20px;
@@ -175,6 +182,7 @@ nav {
       animation: showDropdown both 0.6s;
     }
   }
+
   &.exit_dropdown {
     .dropdown_container {
       display: block;
@@ -188,27 +196,33 @@ nav {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
 @keyframes hideDropdown {
   from {
     transform: translateY(0px);
     opacity: 1;
   }
+
   to {
     opacity: 0;
     transform: translateY(-20px);
   }
 }
 
-// footer stylings
-
+// footer stylings ____________________________________________________________________________________
 .wrapper {
-  width: 100%;
+  margin-top: -10rem;
+  // position: absolute;
+
   .form_wrapper {
+    position: relative;
+    bottom: -200px;
     background-color: $secondary;
     font-size: $f_sm;
     border-radius: 2rem;
@@ -218,7 +232,8 @@ nav {
     .conatct_details_warpper {
       h2 {
         font-size: $f_lg;
-        font-family: "Syne-semi-bold" !important;
+        font-family: 'Syne-semi-bold' !important;
+
         span {
           color: $green;
         }
@@ -226,12 +241,14 @@ nav {
 
       .details {
         padding: 2rem 0;
+
         p {
-          font-family: "Syne-bold" !important;
+          font-family: 'Syne-bold' !important;
+
           span {
-            font-family: "Syne-bold" !important;
+            font-family: 'Syne-bold' !important;
             color: $green;
-            margin-right: 0.5rem;
+
           }
         }
       }
@@ -239,7 +256,7 @@ nav {
 
     .contact_form_wrapper {
       h2 {
-        font-family: "Syne-semi-bold" !important;
+        font-family: 'Syne-semi-bold' !important;
         text-underline-offset: 0.5rem;
         text-decoration: underline;
         font-size: $f_md;
@@ -250,7 +267,7 @@ nav {
 
         .form-row {
           label {
-            font-family: "Syne-semi-bold" !important;
+            font-family: 'Syne-semi-bold' !important;
             color: $green;
             font-size: $f_sm;
           }
@@ -262,10 +279,11 @@ nav {
       }
     }
   }
+
   .footer_wrapper {
-    font-family: "Syne-semi-bold" !important;
+    font-family: 'Syne-semi-bold' !important;
     background-color: $primary;
-   width: 100%;
+    width: 100vw;
     padding: 300px 1rem 2rem 1rem;
 
     .footer_container {
@@ -273,14 +291,17 @@ nav {
       flex-wrap: wrap;
       color: $white;
       gap: 1rem;
+
       .cols {
         flex: 1;
         min-width: 250px;
         max-width: 350px;
+
         .icons {
           display: flex;
           gap: 1rem;
           flex: 1;
+
           i {
             padding: 1rem;
             border-radius: 50%;
@@ -289,6 +310,7 @@ nav {
             background-color: $secondary;
           }
         }
+
         img {
           margin-bottom: 1rem;
           height: 200px;
@@ -299,11 +321,14 @@ nav {
           margin: 1rem;
 
           a {
-            font-family: "Syne-semi-bold" !important;
+
+            font-family: 'Syne-semi-bold' !important;
             color: $white;
+
 
             &:hover {
               text-decoration: underline;
+              color: $green;
               text-decoration-color: $green;
               text-underline-offset: 1rem;
             }
@@ -347,6 +372,7 @@ nav {
       background-color: $secondary;
     }
   }
+
   &.secondary {
     background-color: $secondary;
     color: #fff;
@@ -359,9 +385,11 @@ nav {
   &.f_sm {
     font-size: 12px;
   }
+
   &.f_md {
     font-size: 14px;
   }
+
   &.f_lg {
     font-size: 16px;
   }
@@ -376,9 +404,11 @@ nav {
       &.icon_sm {
         font-size: 18px;
       }
+
       &.icon_md {
         font-size: 22px;
       }
+
       &.icon_lg {
         font-size: 26px;
       }
@@ -392,6 +422,7 @@ nav {
     height: 50px;
 
     z-index: 1;
+
     &::after {
       content: "";
       position: absolute;
@@ -403,6 +434,7 @@ nav {
       background-color: $secondary;
       z-index: -1;
     }
+
     &:hover {
       &::after {
         width: 100%;
@@ -419,6 +451,7 @@ nav {
       width: 60px;
     }
   }
+
   &.animated_white {
     background-color: $white;
   }
@@ -489,6 +522,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 0 18px;
+
     &::after {
       content: "";
       position: absolute;
@@ -501,6 +535,7 @@ nav {
       z-index: -1;
     }
   }
+
   &.xlg {
     // width: 190px;
     height: 65px;
@@ -508,6 +543,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 0 18px;
+
     &::after {
       content: "";
       position: absolute;
@@ -534,10 +570,12 @@ nav {
   box-shadow: 0 0 10px #a7a7a7;
   padding-bottom: 40px;
   margin: auto;
+
   .image_container {
     height: 360px;
     overflow: hidden;
     border-radius: 80px;
+
     img {
       border-radius: 80px;
       width: 100%;
@@ -545,6 +583,7 @@ nav {
       object-fit: cover;
     }
   }
+
   .content_container {
     padding: 20px 30px;
     text-align: center;
@@ -553,6 +592,7 @@ nav {
       font-size: $f_sm;
       color: $primary;
     }
+
     .car_subtitle {
       font-size: $f_txt_sm;
       color: $secondary;
@@ -564,6 +604,7 @@ nav {
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px #a7a7a7;
   height: 100%;
+
   img {
     width: 100%;
     height: 370px;
@@ -577,14 +618,17 @@ nav {
 
   .button_container {
     padding: 0 18px;
+
     .styled_button {
       transform: translateY(-50%);
     }
   }
+
   .content_container {
     padding: 12px;
     padding-top: 0;
     padding-bottom: 30px;
+
     .card_title {
       color: $primary;
       font-size: $f_md;
@@ -595,12 +639,15 @@ nav {
     ul {
       margin-top: 20px;
     }
+
     ul {
       margin-left: 50px;
     }
+
     li {
       line-height: 2;
     }
+
     p,
     li {
       font-size: $f_txt_md;
@@ -613,11 +660,72 @@ nav {
 .flex_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1rem;
 
   .styled_rounded_card {
     min-width: 200px;
     width: unset;
     flex: 1;
   }
+}
+
+
+
+//media queries
+
+@media screen and (max-width:768px) {
+
+  // footer stylings
+  .wrapper {
+    .form_wrapper {
+      padding: 1rem;
+      font-size: $f_extrasm;
+
+      .conatct_details_warpper {
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      .contact_form_wrapper {
+        h2 {
+          font-size: 25px;
+        }
+
+        form {
+          .form-row {
+            label {
+              font-size: $f_extrasm;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_wrapper {
+      .cols {
+        text-align: center;
+
+        h2,
+        .links {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  //banner 
+  .banner-wrapper {
+    .banner {
+      .banner-heading {
+        h2 {
+          font-size: $f_sm;
+        }
+      }
+    }
+  }
+
+  // services page
+  
+
 }

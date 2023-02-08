@@ -1,8 +1,6 @@
 .children_wrapper {
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
-
   
   .banner1{
     padding-top: 50px;
@@ -39,6 +37,8 @@
       .btns {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
+        gap:2rem;
         justify-content: space-around;
         button {
           width: 250px;
@@ -46,16 +46,24 @@
       }
     }
     .my_img{
-
+      display: flex; 
+      flex-wrap:wrap;
+      flex:1;
+      flex-direction: row;
+      // gap:1rem;
         img{
-            width: 88%;
-            height: 475px;
-            object-fit: cover;
-            background-position: center;
-            margin:0 0 10px 15px;
+          width: 90%;
+          background-size: contain;
+          background-position: center;
+          &:first-child{
+            padding: 1rem;
+          }
+          &:hover{
+            transform: scale(1.01);
+          }
         }
         .img{
-          width: 93%;
+          width: 90%;
           margin: 0 !important;
         }
     }
@@ -114,138 +122,19 @@
     }
   }
 }
-@media (min-width: 360px) and (max-width: 800px) {
+
+@media screen and (max-width:768px) {
   .children_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-
     .banner1 {
-      .my_text1 {
-        .btns {
+      .my_img {
+        img {
           width: 100%;
-          display: flex;
-          flex-direction: column;
-
-          button {
-            width: 200px;
-            margin: 10px 0 !important;
-          }
         }
       }
     }
+
     .banner2 {
-      .my_text1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        h1 {
-          font-size: $f_lg;
-          color: $secondary;
-          letter-spacing: 2px;
-          span {
-            color: $green;
-          }
-        }
-        .underline {
-          width: 20%;
-          background-color: $green;
-          height: 0.01rem;
-          margin: 15px 0;
-        }
-      }
-      .cards {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        .card1 {
-          margin-left: 0 !important;
-        }
-        .card {
-          width: 100% !important;
-          margin: 10px 10px 10px 2px;
-
-          img {
-            height: 350px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 25%;
-          }
-          h3 {
-            color: $secondary;
-            font-size: $f_sm;
-            letter-spacing: 1px;
-          }
-          p {
-            color: $green;
-            font-size: 16px;
-          }
-          button {
-            width: 100%;
-            font-size: 8px;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px){
-  .children_wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-
-    .banner1 {
-      .my_text1 {
-        .btns {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-
-          button {
-            width: 200px;
-            margin: 10px 0 !important;
-          }
-        }
-      }
-    }
-    .banner2 {
-      .my_text1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        h1 {
-          font-size: $f_lg;
-          color: $secondary;
-          letter-spacing: 2px;
-          span {
-            color: $green;
-          }
-        }
-        .underline {
-          width: 20%;
-          background-color: $green;
-          height: 0.01rem;
-          margin: 15px 0;
-        }
-      }
-      .cards {
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        .card1 {
-          margin-left: 0 !important;
-        }
-        .card {
-          width: 50% !important;
-          margin: 10px 10px 10px 2px;
-        }
-      }
+      margin: 0;
     }
   }
 }
