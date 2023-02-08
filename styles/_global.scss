@@ -82,9 +82,18 @@ nav {
   transition: $transition_light;
   top: 0;
   left: 0;
+
+  .mobile_nav {
+    display: none;
+  }
+
   .nav_wrapper {
     width: 100%;
     display: flex;
+
+    .mobile_menu {
+      display: none;
+    }
 
     .nav_cols {
       display: flex;
@@ -141,6 +150,11 @@ nav {
     cursor: pointer;
   }
 
+  .dpd_icon {
+    transform: rotate(0deg);
+    transition: $transition_medium;
+  }
+
   .dropdown_container {
     position: absolute;
     z-index: 100;
@@ -154,7 +168,6 @@ nav {
     &:hover {
       display: block;
     }
-    
 
     .dropdown_items {
       height: 60px;
@@ -178,6 +191,9 @@ nav {
     .dropdown_container {
       display: block;
       animation: showDropdown both 0.6s;
+    }
+    .dpd_icon {
+      transform: rotate(180deg);
     }
   }
   &.exit_dropdown {
@@ -270,7 +286,7 @@ nav {
   .footer_wrapper {
     font-family: "Syne-semi-bold" !important;
     background-color: $primary;
-   width: 100%;
+    width: 100%;
     padding: 300px 1rem 2rem 1rem;
 
     .footer_container {
@@ -624,5 +640,169 @@ nav {
     min-width: 200px;
     width: unset;
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    padding-top: 160px;
+  }
+
+  nav {
+    height: 160px;
+    .nav_wrapper {
+      position: relative;
+      .mobile_menu {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+
+        button {
+          font-size: 24px;
+          color: $primary;
+        }
+      }
+
+      .nav_cols {
+        &.logo_wrapper {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+
+        &.links_styles {
+          display: none;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    &.animated_nav .nav_cols.logo_wrapper img {
+      height: 80px;
+      width: 80px;
+    }
+
+    .mobile_nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 111;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: #ffffff;
+      transform: translateY(-100%);
+      transition: $transition_high;
+      opacity: 0;
+      padding: 60px 20px;
+      padding-bottom: 0;
+      overflow-y: auto;
+
+      .close_icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+        font-size: 26px;
+        i {
+          color: $primary;
+        }
+      }
+
+      .mobile_links_container {
+        padding: 5px 0;
+        a {
+          color: #000000;
+          margin: 10px 0;
+          cursor: pointer;
+          text-decoration: none;
+          font-size: $f_txt_md;
+        }
+        .dpd_icon {
+          transform: rotate(0deg);
+          transition: $transition_medium;
+        }
+        .mobile_dropdown {
+          padding-left: 20px;
+          display: flex;
+          flex-direction: column;
+          height: 0;
+          overflow: hidden;
+        }
+
+        &.open_mobile_dropdown {
+          .dpd_icon {
+            transform: rotate(180deg);
+          }
+
+          .mobile_dropdown {
+            height: auto;
+            overflow: unset;
+          }
+        }
+      }
+
+      &.open_nav {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .get_in_touch {
+        width: calc(100% + 40px);
+        position: relative;
+        left: -20px;
+        padding: 20px;
+        background-color: $primary;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        a {
+          color: #fff;
+        }
+
+        h1 {
+          font-size: $f_sm;
+          text-transform: uppercase;
+        }
+
+        .border {
+          width: 50px;
+          margin: 30px 0;
+          height: 2px;
+          background-color: #fff;
+        }
+
+        .icons_container {
+          display: flex;
+          padding: 10px 0;
+
+          .icons {
+            height: 30px;
+            width: 30px;
+            background-color: #ffffffea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: $primary;
+            margin-right: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 }

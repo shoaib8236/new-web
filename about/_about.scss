@@ -75,7 +75,7 @@
         width: 82% !important;
       }
       .img2 {
-        width: 65% !important;
+        width: 65% ;
       }
     }
   }
@@ -138,58 +138,57 @@
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .banner {
+
+
+@media screen and (max-width: 768px) {
+  .about_wrapper {
+
     img {
-      width: 50% !important;
-      height: auto !important;
-    }
-  }
-  .banner2 {
-    img {
-      height: auto !important;
-      width: 50% !important;
-    }
-  }
-  .banner4 {
-    width: 100% !important;
-    .text {
-      img {
-        width: 50% !important;
-        height: auto !important;
-      }
+      object-fit: cover;
     }
 
-    .text1 {
-      padding-left: 0 !important;
-      margin: 0 !important;
+    .banner {
+      .text {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .banner3 {
+      .text {
+        img,
+        .img1 {
+          width: 100% !important;
+        }
+      }
+    }
+    .banner4 {
+      .text1,.text {
+        padding-left: 0;
+
+        img {
+          width: 100%;
+        }
+
+        .img1 {
+          width: 100% ;
+        }
+      }
+      .offset-2 {
+        margin-left: 0 !important;
+      }
+    }
+    h1,
+    h2 {
+      font-size: $f_mob_md !important;
     }
   }
 }
-@media (min-width: 360px) and (max-width: 812px) {
-  .banner {
-    img {
-      width: 100% !important;
-      height: auto !important;
-    }
-  }
-  .banner2 {
-    img {
-      height: auto !important;
-      width: 100% !important;
-    }
-  }
-  .banner4 {
-    .text {
-      img {
-        width: 100% !important;
-        height: auto !important;
-      }
-    }
-
-    .text1 {
-      padding-left: 0 !important;
-      margin: 0 !important;
+@media screen and (max-width: 480px) {
+  .about_wrapper {
+    h1,
+    h2 {
+      font-size: $f_mob_sm !important;
     }
   }
 }

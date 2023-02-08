@@ -208,7 +208,9 @@
   }
   .intro_container {
     .c_container {
-      padding: 20px 10px;
+      // padding: 20px 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .intro_cols {
@@ -245,6 +247,34 @@
   .end_container {
     .end_title {
       font-size: $f_mob_md;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home_wrapper {
+    .banner {
+      h1 {
+        font-size: $f_mob_sm;
+      }
+    }
+    .banner1 {
+      h1 {
+        font-size: $f_mob_sm;
+      }
+    }
+  }
+  .intro_container {
+    .intro_cols {
+      h1 {
+        font-size: $f_mob_sm;
+      }
+    }
+  }
+
+  .end_container {
+    .end_title {
+      font-size: $f_mob_sm;
     }
   }
 }
