@@ -19,16 +19,21 @@
 </head>
 
 <body>
-    <!-- <nav id="nav">
-        <div class="nav_wrapper container">
+    <nav id="nav">
+        <div class="nav_wrapper c_container">
+            <div class="mobile_menu">
+                <button onclick="onOpenMobileMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
             <div class="nav_cols logo_wrapper">
                 <img src="../assests/logo/logo.png" alt="">
             </div>
             <div class="nav_cols links_styles">
-                <a href="../index.html">Home</a>
+                <a href="../../index.html">Home</a>
                 <div onmouseleave="dropdown(this)" onmouseenter="dropdown(this, 'add')" id="#dropdown"
                     class="dropdown_wrapper">
-                    <a>Services</a>
+                    <a>Services <i class="fa fa-angle-down ml-1 dpd_icon"></i></a>
                     <div class="dropdown_container">
                         <a href="./mental_health_support/index.html" class="dropdown_items">Mental Health Support</a>
                         <a href="./disability_support/index.html" class="dropdown_items">Disability Support</a>
@@ -41,9 +46,9 @@
                 </div>
                 <div onmouseleave="dropdown(this)" onmouseenter="dropdown(this, 'add')" id="#dropdown"
                     class="dropdown_wrapper">
-                    <a>About us</a>
+                    <a>About us <i class="fa fa-angle-down ml-1 dpd_icon"></i></a>
                     <div class="dropdown_container">
-                        <a class="dropdown_items">Meet the team</a>
+                        <a href="about/index.html" class="dropdown_items">Meet the team</a>
                     </div>
                 </div>
                 <a href="./career/index.html">Career</a>
@@ -56,7 +61,58 @@
                 </button>
             </div>
         </div>
-    </nav> -->
+        <div id="mobile_nav" class="mobile_nav">
+            <button onclick="onOpenMobileMenu()" class="close_icon">
+                <i class="material-icons">close</i>
+            </button>
+
+            <div>
+                <div class="mobile_links_container">
+                    <a href="index.html">Home</a>
+                </div>
+                <div onclick="openMobileDropDown(this)" class="mobile_links_container">
+                    <a>About <i class="fa fa-angle-down ml-1 dpd_icon"></i></a>
+                    <div class="mobile_dropdown">
+                        <a href="about/index.html" class="dropdown_items">Meet the team</a>
+                    </div>
+                </div>
+                <div onclick="openMobileDropDown(this)" class="mobile_links_container">
+                    <a>Services <i class="fa fa-angle-down ml-1 dpd_icon"></i></a>
+                    <div class="mobile_dropdown">
+                        <a href="./mental_health_support/index.html" class="dropdown_items">Mental Health Support</a>
+                        <a href="./disability_support/index.html" class="dropdown_items">Disability Support</a>
+                        <a href="./children_support/index.html" class="dropdown_items">Children Support</a>
+                        <a href="./support_coordination/index.html" class="dropdown_items">Support Coordination</a>
+                        <a href="./respite/index.html" class="dropdown_items">Respite</a>
+                        <a href="./cleaning/index.html" class="dropdown_items">Cleaning</a>
+                        <a href="./counselling/index.html" class="dropdown_items">Consoling</a>
+                    </div>
+                </div>
+                <div class="mobile_links_container">
+                    <a href="">Career</a>
+                </div>
+                <div class="mobile_links_container">
+                    <a href="">Contact us</a>
+                </div>
+            </div>
+            <div class="get_in_touch">
+                <h1>Get in touch</h1>
+                <a href="tel:000000000">000 000 000</a>
+                <a href="mailto:example@ gmail.com">example@ gmail.com</a>
+                <div class="border"></div>
+                <h1>Follow us</h1>
+                <div class="icons_container">
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-instagram"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="cleaning_wrapper">
         <div class="banner-wrapper"
             style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat  center/100% url(../assests/images/img10.PNG)">
