@@ -225,11 +225,14 @@ nav {
   }
 }
 
-// footer stylings
-
+// footer stylings ____________________________________________________________________________________
 .wrapper {
-  width: 100%;
+  margin-top: -10rem;
+  // position: absolute;
+
   .form_wrapper {
+    position: relative;
+    bottom: -200px;
     background-color: $secondary;
     font-size: $f_sm;
     border-radius: 2rem;
@@ -240,6 +243,7 @@ nav {
       h2 {
         font-size: $f_lg;
         font-family: "Syne-semi-bold" !important;
+
         span {
           color: $green;
         }
@@ -247,12 +251,13 @@ nav {
 
       .details {
         padding: 2rem 0;
+
         p {
           font-family: "Syne-bold" !important;
+
           span {
             font-family: "Syne-bold" !important;
             color: $green;
-            margin-right: 0.5rem;
           }
         }
       }
@@ -283,10 +288,11 @@ nav {
       }
     }
   }
+
   .footer_wrapper {
     font-family: "Syne-semi-bold" !important;
     background-color: $primary;
-    width: 100%;
+    width: 100vw;
     padding: 300px 1rem 2rem 1rem;
 
     .footer_container {
@@ -294,14 +300,17 @@ nav {
       flex-wrap: wrap;
       color: $white;
       gap: 1rem;
+
       .cols {
         flex: 1;
         min-width: 250px;
         max-width: 350px;
+
         .icons {
           display: flex;
           gap: 1rem;
           flex: 1;
+
           i {
             padding: 1rem;
             border-radius: 50%;
@@ -310,6 +319,7 @@ nav {
             background-color: $secondary;
           }
         }
+
         img {
           margin-bottom: 1rem;
           height: 200px;
@@ -325,6 +335,7 @@ nav {
 
             &:hover {
               text-decoration: underline;
+              color: $green;
               text-decoration-color: $green;
               text-underline-offset: 1rem;
             }
@@ -805,4 +816,58 @@ nav {
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  // footer stylings
+  .wrapper {
+    .form_wrapper {
+      padding: 1rem;
+      font-size: $f_extrasm;
+
+      .conatct_details_warpper {
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      .contact_form_wrapper {
+        h2 {
+          font-size: 25px;
+        }
+
+        form {
+          .form-row {
+            label {
+              font-size: $f_extrasm;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_wrapper {
+      .cols {
+        text-align: center;
+
+        h2,
+        .links {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  //banner
+  .banner-wrapper {
+    .banner {
+      .banner-heading {
+        h2 {
+          font-size: $f_sm;
+        }
+      }
+    }
+  }
+
+  // services page
 }
