@@ -87,3 +87,32 @@
     }
   }
 }
+
+
+@media screen and (max-width:768px) {
+  .career_wrapper {
+
+      .left {
+        padding: 20px !important;
+        .left-wrapper {
+          .left-cards {
+            .career_cards {
+              height: 200px;
+              width: 100%;
+              flex: unset;
+            }
+          }
+        }
+      
+    }
+
+    .left-cards {
+      flex-direction: column;
+
+    .career_cards {
+      width: 100% !important;
+      height: 200px;
+    }
+    }
+  }
+}

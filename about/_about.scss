@@ -75,7 +75,7 @@
         width: 82% !important;
       }
       .img2 {
-        width: 65% ;
+        width: 65%;
       }
     }
   }
@@ -137,12 +137,83 @@
       }
     }
   }
-}
 
+  .team_members {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    img {
+      object-fit: cover;
+    }
+    h1 {
+      font-size: $f_md;
+      color: #000000a6;
+    }
+    p {
+      font-size: $f_txt_md;
+    }
+
+    .team_cards {
+      padding: 0 30px;
+      img {
+        width: 100%;
+
+        margin-bottom: 10px;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.crd_1 {
+        transform: translateY(50px);
+
+        img {
+          width: calc(100% - 80px);
+          height: 200px;
+        }
+      }
+      &.crd_2 {
+        transform: translateY(50px);
+        img {
+          height: 330px;
+          width: 100%;
+        }
+      }
+      &.crd_3 {
+        img {
+          height: 200px;
+          width: calc(100% - 120px);
+        }
+      }
+      &.crd_4 {
+        transform: translateY(-60px);
+        img {
+          height: 340px;
+          width: calc(100%);
+        }
+      }
+      &.crd_5 {
+        transform: translateY(80px);
+        img {
+          height: 200px;
+          width: calc(100% - 50px);
+        }
+      }
+      &.crd_6 {
+        transform: translateY(80px);
+        img {
+          height: 200px;
+          width: calc(100% - 100px);
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .about_wrapper {
-
     img {
       object-fit: cover;
     }
@@ -163,15 +234,18 @@
       }
     }
     .banner4 {
-      .text1,.text {
+      .text1,
+      .text {
         padding-left: 0;
 
         img {
           width: 100%;
+          height: 300px;
+          margin: 0 0 20px 0;
         }
 
         .img1 {
-          width: 100% ;
+          width: 100%;
         }
       }
       .offset-2 {
@@ -189,6 +263,36 @@
     h1,
     h2 {
       font-size: $f_mob_sm !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about_wrapper {
+    .team_members {
+      .team_cards {
+        padding: 0;
+      }
+    }
+    .banner4 .text1 {
+      padding-left: 0;
+      margin: 0 !important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_wrapper {
+    .team_members {
+      margin-bottom: 0;
+      .team_cards {
+        transform: unset !important;
+        padding: 20px 0;
+
+        img {
+          height: 350px !important;
+          width: calc(100% - 30px) !important;
+        }
+      }
     }
   }
 }

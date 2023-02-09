@@ -118,7 +118,7 @@ nav {
       &.links_styles {
         flex-grow: 1;
 
-        >a {
+        > a {
           color: $text-color;
           font-size: 20px;
           margin: 0 20px;
@@ -252,7 +252,6 @@ nav {
     .conatct_details_warpper {
       h2 {
         font-size: $f_lg;
-        font-family: 'Syne-semi-bold' !important;
 
         span {
           color: $green;
@@ -263,10 +262,7 @@ nav {
         padding: 2rem 0;
 
         p {
-          font-family: "Syne-bold" !important;
-
           span {
-            font-family: 'Syne-bold' !important;
             color: $green;
           }
         }
@@ -275,7 +271,6 @@ nav {
 
     .contact_form_wrapper {
       h2 {
-        font-family: 'Syne-semi-bold' !important;
         text-underline-offset: 0.5rem;
         text-decoration: underline;
         font-size: $f_md;
@@ -286,7 +281,6 @@ nav {
 
         .form-row {
           label {
-            font-family: 'Syne-semi-bold' !important;
             color: $green;
             font-size: $f_sm;
           }
@@ -300,9 +294,7 @@ nav {
   }
 
   .footer_wrapper {
-    font-family: 'Syne-semi-bold' !important;
     background-color: $primary;
-    width: 100vw;
     padding: 300px 1rem 2rem 1rem;
 
     .footer_container {
@@ -322,8 +314,12 @@ nav {
           flex: 1;
 
           i {
-            padding: 1rem;
-            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
             font-size: $f_sm;
             color: $white;
             background-color: $secondary;
@@ -340,10 +336,7 @@ nav {
           margin: 1rem;
 
           a {
-
-            font-family: 'Syne-semi-bold' !important;
             color: $white;
-
 
             &:hover {
               text-decoration: underline;
@@ -502,7 +495,7 @@ nav {
       h2 {
         //
         font-size: $f_lg;
-        font-family: "Syne-semi-bold";
+
         text-transform: capitalize;
         color: $white;
       }
@@ -892,7 +885,7 @@ nav {
     }
   }
 
-  //banner 
+  //banner
   .banner-wrapper {
     .banner {
       .banner-heading {
@@ -904,6 +897,4 @@ nav {
   }
 
   // services page
-  
-
 }
