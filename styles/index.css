@@ -939,13 +939,60 @@ nav.animated_nav .nav_cols.logo_wrapper img {
     font-size: 28px;
   }
 }
-.contact-us .wrapper {
-  margin-top: 20rem;
+.contact_wrapper {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center/100% url(../assests/images/img22.webp);
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contact-us .banner-wrapper {
-  height: unset;
+.contact_wrapper .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_wrapper .banner .underline {
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 10px 0;
+}
+.contact_wrapper .banner h1 {
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+.contact_wrapper .banner p {
+  font-size: 18px;
+  color: #ffffff;
 }
 
+@media screen and (max-width: 1336px) {
+  .contact_wrapper {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .contact_wrapper {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact_wrapper {
+    height: 240px;
+  }
+  .contact_wrapper .banner h1 {
+    font-size: 30px;
+  }
+  .contact_wrapper .banner p {
+    font-size: 16px;
+  }
+}
 .mental_wrapper {
   width: 100%;
   height: auto;

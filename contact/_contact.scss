@@ -1,9 +1,57 @@
-.contact-us{
-    .wrapper {
-            margin-top: 20rem;  
+.contact_wrapper{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat  center/100% url(../assests/images/img22.webp);
+    height: 800px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .underline{
+            width: 40px;
+            height: 2px;
+            background-color: $white;
+            margin: 10px 0;
         }
-    
-        .banner-wrapper{
-            height: unset;
+        h1{
+            font-size: $f_lg;
+            color: $white;
+            letter-spacing: 1.5px;
         }
+        p{
+            font-size: $f_txt_md;
+            color: $white;
+        }
+    }
+}
+@media screen and (max-width: 1336px){
+    .contact_wrapper{
+        height:700px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .contact_wrapper{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 767px){
+    .contact_wrapper{
+        height: 240px;
+
+        .banner{
+            h1{
+                font-size: $f_md;
+            }
+            p{
+                font-size: $f_txt_sm;
+            }
+        }
+    }
 }
